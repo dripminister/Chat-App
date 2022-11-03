@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.register, .login, .home{
+  background-color: rgb(8, 8, 91);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.form-container h1{
+  margin: 0;
+}
+
+.form-container input{
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+}
+
+.form-container label{
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+  width: auto;
+}
+
+.form-container span{
+  font-size: 25px;
+}
+
+.form-container button{
+  padding: 10px 15px;
+  background-color: rgb(8, 8, 91);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.form-container button:hover{
+  background-color: rgb(8, 8, 128); 
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(120, 219, 237);
+  gap: 10px;
+}
+
+nav button, .input button{
+  padding: 15px 25px;
+  background-color: rgb(8, 8, 91);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover, .input button:hover{
+  background-color: rgb(8, 8, 128);
+}
+
+.chat{
+  position: fixed;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  background-color: rgb(8, 8, 91);
+  color: white;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.input{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(120, 219, 237);
+  gap: 10px
+}
+
+.input input{
+  height: 100%;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(8, 8, 91);
+  color: white;
+}
+
+.input input::placeholder{
+  color: white;
+}
+
+.message-container{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.message{
+  background-color: rgb(38, 76, 181);
+  border-radius: 0px 10px 10px 10px;
+  color: white;
+  height: min-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  max-width: 250px / 50%;
+}
+
+.sender{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sender img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.sender p{
+  margin: 0;
+  color: white;
+}
+
+.own{
+  flex-direction: row-reverse;
+}
+
+.own .message{
+  border-radius: 10px 0px 10px 10px;
+}
