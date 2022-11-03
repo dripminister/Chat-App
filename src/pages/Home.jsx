@@ -6,8 +6,6 @@ import { auth } from '../firebase'
 
 export default function Home() {
 
-    console.log(auth)
-
   return (
     <div className='home'>
         <div className='wrapper'>
