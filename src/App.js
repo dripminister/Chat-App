@@ -5,7 +5,6 @@ import Register from "./pages/Register"
 import { auth } from "./firebase"
 
 function App() {
-  console.log(auth)
   const currentUser = auth.currentUser
 
   const ProtectedRoute = ({ children }) => {
