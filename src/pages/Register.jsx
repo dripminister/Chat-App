@@ -14,12 +14,8 @@ export default function Register() {
     const [password, setPassword] = useState("")
     const [file, setFile] = useState(null)
 
-    console.log(file)
-
     const handleSubmit = async (e) => {
         e.preventDefault()
-
-        //const file = e.target[3].files[0]
 
         try{
             const res = await createUserWithEmailAndPassword(auth, email, password)
